@@ -1,0 +1,17 @@
+{
+  "name": "Color Changer for StackOverflow",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A script to customize the colors of the interesting questions on SO.",
+  "icons": { "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://stackoverflow.com/*"],
+      "css": ["soic_style.css"],
+      "js": ["jquery.min.js", "soic_script.js"]
+    }
+  ],
+  "permissions": [
+    "http://stackoverflow.com/"
+  ]
+}

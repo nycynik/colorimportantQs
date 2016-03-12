@@ -21,3 +21,10 @@ To install, download this repository, turn Chrome in to development mode and add
 - Click Load unpacked extension… to pop up a file-selection dialog.
 - Navigate to the directory in which your extension files live, and select it.
   
+# Changing colors or topics
+
+To modify colors or interesting topics, modify soic_script.js before loading, or reload it after you make changes.
+var interestingTags =   ["ios","php","python","c#","javascript","java","flash","c++","cocos2d"];
+var interestingColors = ["#D6EBFF","#CC86FF","#eee","#C3A6CA","#D6C2AD","#FF9999","#EB9EA0","#bbb","#C5DBD9"];
+
+

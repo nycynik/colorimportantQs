@@ -7,8 +7,8 @@ $(".tagged-interesting").each(function(e,i) {
 	$(".post-tag",i).each(function(e,i) {
 		var tag = $(i).html();
 		var foundtag = interestingTags.indexOf(tag);
-		if (foundtag != -1) {
-			if (wasFound==0) $(wholeInteresting).css("background-color",interestingColors[foundtag]); 
+		if (foundtag !== -1) {
+			if (wasFound===0) $(wholeInteresting).css("background-color",interestingColors[foundtag]); 
 			$(this).css("background-color",interestingColors[foundtag]); 
 			wasFound++;
 		}
